@@ -8,11 +8,9 @@ This repository contains a frontend (React) and a backend (Node.js) for the Esti
 project-root/
 ├── backend/              # Node.js backend
 │   ├── server.js         # Main server file
-│   ├── routes/           # API route definitions
-│   ├── controllers/      # Business logic for API endpoints
-│   ├── data/             # Sample JSON data
-│   ├── config/           # Configuration files (e.g., CORS)
-│   └── middleware/       # Middleware for error handling, logging, etc.
+│   ├── details.json      # json data for the estimate
+│   ├── package.json      
+│   ├── package-lock.json             
 ├── frontend/             # React frontend
 │   ├── public/           # Static files (e.g., index.html)
 │   ├── src/              # React components and logic
