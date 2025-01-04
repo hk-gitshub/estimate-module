@@ -25,6 +25,7 @@ project-root/
 ### Prerequisites
 
     Node.js (v16 or later)
+    React.js and Tailwind CSS
     npm or yarn
     Git
 
@@ -52,7 +53,7 @@ cd estimate-module
     node server.js
     ```
 
-The server will run at http://localhost:8000.
+The server will run at ```http://localhost:8000```
 
 ### Frontend setup
 
