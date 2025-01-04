@@ -14,8 +14,10 @@ project-root/
 ├── frontend/             # React frontend
 │   ├── public/           # Static files (e.g., index.html)
 │   ├── src/              # React components and logic
-│   ├── package.json      # Frontend dependencies
-│   └── README.md         # Frontend-specific README
+│   ├── package.json
+│   ├── package-lock.json  
+│   ├── postcss.config.js   
+│   └── tailwind.config.js # Tailwind CSS config file
 └── README.md             # Project README
 ```
 
