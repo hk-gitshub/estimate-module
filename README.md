@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Estimate Module Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a frontend (React) and a backend (Node.js) for the Estimate Module. Follow the instructions below to set up and run the project after cloning the repository.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+```
+project-root/
+├── backend/              # Node.js backend
+│   ├── server.js         # Main server file
+│   ├── routes/           # API route definitions
+│   ├── controllers/      # Business logic for API endpoints
+│   ├── data/             # Sample JSON data
+│   ├── config/           # Configuration files (e.g., CORS)
+│   └── middleware/       # Middleware for error handling, logging, etc.
+├── frontend/             # React frontend
+│   ├── public/           # Static files (e.g., index.html)
+│   ├── src/              # React components and logic
+│   ├── package.json      # Frontend dependencies
+│   └── README.md         # Frontend-specific README
+└── README.md             # Project README
+```
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Node.js (v16 or later)
+    npm or yarn
+    Git
 
-### `npm test`
+### Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/your-username/estimate-module.git
+cd estimate-module
+```
 
-### `npm run build`
+### Backend Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Navigate to the backend folder:
+    ```bash
+    cd backend
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the backend server:
+    ```bash 
+    node server.js
+    ```
 
-### `npm run eject`
+The server will run at http://localhost:8000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Navigate to the frontend folder:
+    ```bash
+    cd backend
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Start the backend server:
+    ```bash 
+    node start
+    ```
 
-## Learn More
+## Test the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Open your browser and visit: ```http://localhost:3000```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. The frontend will fetch data from the backend
+(```http://localhost:8000/details```) and display it.
